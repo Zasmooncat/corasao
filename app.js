@@ -36,13 +36,66 @@ const asciiHeart = [
 ]
 
 
+// BY CHART
+
 
 const animateByChart = (ms) => {
 
-}
+    let i = 0
+    asciiHeart.forEach((line)=>{
+        line.split('').forEach((char)=>{
+            setTimeout(()=>{
+                process.stdout.write(char);
+        },ms * i);
+        i++
 
-const animateByLine = (ms) => {
+        })
 
-}
+        setTimeout (()=>{
+            console.log('')
+        },ms * i)
+        i++
+        })
+    }
+    animateByChart(200)
 
-// animateByChart()
+
+
+    // BY LINE
+    
+    /* const animateByLine = (ms) => {
+        for (let i = 0 ; i < asciiHeart.length ; i++){
+            
+        setTimeout(()=>{console.log(asciiHeart[i])}, ms * i)
+    
+       }
+    }
+            
+    animateByLine(1000) */
+
+    
+        
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+
+
+    
+
+
